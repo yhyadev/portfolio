@@ -5,13 +5,13 @@ const user = (await axios.get("https://api.github.com/users/yhyadev")).data;
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/bin" href={user.avatar_url} />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{user.name}</title>
-	</head>
-	<body> 
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/bin" href={user.avatar_url} />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{user.name}</title>
+  </head>
+  <body>
+  </body>
 </html>
