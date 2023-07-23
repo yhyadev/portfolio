@@ -1,17 +1,5 @@
 ---
-import axios from "axios";
-
-const user = (await axios.get("https://api.github.com/users/yhyadev")).data;
+import Layout from "../components/Layout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/bin" href={user.avatar_url} />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{user.name}</title>
-  </head>
-  <body>
-  </body>
-</html>
+<Layout></Layout>
