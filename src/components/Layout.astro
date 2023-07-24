@@ -1,4 +1,6 @@
 ---
+import BottomNav from "./BottomNav.svelte";
+
 import axios from "axios";
 
 const user = (await axios.get("https://api.github.com/users/yhyadev")).data;
@@ -8,11 +10,14 @@ const user = (await axios.get("https://api.github.com/users/yhyadev")).data;
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/bin" href={user.avatar_url} />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, viewport-fit=cover" />
     <meta name="generator" content={Astro.generator} />
     <title>{user.name}</title>
-    <meta name="description" content="It's me Yhya, Software Developer and focusing on the Backend for web developement." />
-    <meta name="theme-color" content="#feae00"/>
+    <meta
+      name="description"
+      content="It's me Yhya, Software Developer and focusing on the Backend for web developement."
+    />
+    <meta name="theme-color" content="#feae00" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,6 +37,9 @@ const user = (await axios.get("https://api.github.com/users/yhyadev")).data;
     </noscript>
   </head>
   <body>
-    <slot />
+    <main>
+      <slot />
+    </main>
+    <BottomNav client:only/>
   </body>
 </html>
