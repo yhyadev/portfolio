@@ -40,6 +40,6 @@ const user = (await axios.get("https://api.github.com/users/yhyadev")).data;
     <main>
       <slot />
     </main>
-    <BottomNav client:only/>
+    <BottomNav />
   </body>
 </html>
