@@ -23,6 +23,12 @@ importers:
                 specifier: ^5.4.5
                 version: 5.4.5
         devDependencies:
+            "@iconify-json/fa6-brands":
+                specifier: ^1.1.19
+                version: 1.1.19
+            "@iconify/tailwind":
+                specifier: ^1.1.1
+                version: 1.1.1
             prettier:
                 specifier: ^3.3.0
                 version: 3.3.0
@@ -759,6 +765,24 @@ packages:
         engines: { node: ">=12" }
         cpu: [x64]
         os: [win32]
+
+    "@iconify-json/fa6-brands@1.1.19":
+        resolution:
+            {
+                integrity: sha512-3Dl0D1gtFwIj7/GT2xJbkM9D/LjuozsgfLrqRWP6B5xuajtsyEvR1wD0Z06y3iaNtASpgWPWyYbml+AHQ3Hw0g==,
+            }
+
+    "@iconify/tailwind@1.1.1":
+        resolution:
+            {
+                integrity: sha512-4mmA//qjZigv7D4KlqcVSYTqfRIJzyts2/lSCAJfCL0rVMIE76+ifJnaE5jxCo1+nYGBF8FsFo0qFOs+sX4EnA==,
+            }
+
+    "@iconify/types@2.0.0":
+        resolution:
+            {
+                integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==,
+            }
 
     "@img/sharp-darwin-arm64@0.33.4":
         resolution:
@@ -4453,6 +4477,16 @@ snapshots:
 
     "@esbuild/win32-x64@0.21.4":
         optional: true
+
+    "@iconify-json/fa6-brands@1.1.19":
+        dependencies:
+            "@iconify/types": 2.0.0
+
+    "@iconify/tailwind@1.1.1":
+        dependencies:
+            "@iconify/types": 2.0.0
+
+    "@iconify/types@2.0.0": {}
 
     "@img/sharp-darwin-arm64@0.33.4":
         optionalDependencies:

@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background-color: theme("colors.black-900");
-    color: theme("colors.white");
+@layer base {
+    body {
+        background-color: theme("colors.black-900");
+        color: theme("colors.white");
+        font-family: "Poppins", system-ui, sans-serif;
+    }
 }

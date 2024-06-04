@@ -1,3 +1,5 @@
+import { addDynamicIconSelectors } from "@iconify/tailwind";
+
 /** @type {import('tailwindcss').Config} */
 export default {
     content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
@@ -12,9 +14,9 @@ export default {
             "black-300": "#9a9a9a",
             "black-200": "#ababab",
             "black-100": "#bdbdbd",
-            "white": "#eeeeee",
-            "red": "#cf0a0a",
+            white: "#eeeeee",
+            red: "#cf0a0a",
         },
     },
-    plugins: [],
+    plugins: [addDynamicIconSelectors()],
 };
