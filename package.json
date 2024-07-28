@@ -19,6 +19,7 @@
     },
     "devDependencies": {
         "@iconify-json/fa6-brands": "^1.1.19",
+        "@iconify-json/fa6-solid": "^1.1.23",
         "@iconify/tailwind": "^1.1.1",
         "prettier": "^3.3.0",
         "prettier-plugin-astro": "^0.14.0"
